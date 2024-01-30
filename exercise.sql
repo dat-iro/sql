@@ -38,3 +38,7 @@ WHERE title = 'War and Peace';
 GRANT SELECT, UPDATE ON YourDatabaseName.Books TO 'martin'@'localhost';
 
 REVOKE DELETE ON YourDatabaseName.Books FROM 'martin'@'localhost';
+
+--EX6
+
+REVOKE UPDATE ON YourDatabaseName.Books FROM 'martin'@'localhost';
