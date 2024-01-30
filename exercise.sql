@@ -42,3 +42,12 @@ REVOKE DELETE ON YourDatabaseName.Books FROM 'martin'@'localhost';
 --EX6
 
 REVOKE UPDATE ON YourDatabaseName.Books FROM 'martin'@'localhost';
+
+--EX7
+
+START TRANSACTION;
+
+DELETE FROM Books
+WHERE book_id = 101;
+
+COMMIT;
