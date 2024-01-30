@@ -32,3 +32,9 @@ VALUES
 UPDATE Books
 SET price = 12.99, stock_count = 4
 WHERE title = 'War and Peace';
+
+--EX5
+
+GRANT SELECT, UPDATE ON YourDatabaseName.Books TO 'martin'@'localhost';
+
+REVOKE DELETE ON YourDatabaseName.Books FROM 'martin'@'localhost';
